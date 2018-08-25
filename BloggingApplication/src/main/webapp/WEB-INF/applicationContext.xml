@@ -20,7 +20,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
  	<context:component-scan base-package="com" />
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://18.136.172.133:8443/blogging" />
+		<property name="url" value="jdbc:mysql://172.17.0.7:3306/blogging" />
 		<property name="username" value="root" />
 		<property name="password" value="root" />
 	</bean>
