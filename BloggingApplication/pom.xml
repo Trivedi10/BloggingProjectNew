@@ -79,6 +79,17 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	
+	<profiles>
+  <profile>
+      <id>sonar</id>
+      <properties>
+      <sonar.host.url>
+          http://18.136.172.133:9000
+      </sonar.host.url>
+      </properties>
+  </profile>
+</profiles>
 
 
 	<properties>
