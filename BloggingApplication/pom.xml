@@ -5,6 +5,16 @@
 	<artifactId>BloggingApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<profiles>
+  <profile>
+      <id>sonar</id>
+      <properties>
+      <sonar.host.url>
+          http://18.136.172.133:9000
+      </sonar.host.url>
+      </properties>
+  </profile>
+</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -79,17 +89,6 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-	
-	<profiles>
-  <profile>
-      <id>sonar</id>
-      <properties>
-      <sonar.host.url>
-          http://18.136.172.133:9000
-      </sonar.host.url>
-      </properties>
-  </profile>
-</profiles>
 
 
 	<properties>
